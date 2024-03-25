@@ -62,10 +62,7 @@ int main() {
         return 0;
       }
       for (int i = 0; i < 4; i++) {
-        if (cur_position.first + dy[i] >= 0 && cur_position.first + dy[i] < r &&
-            cur_position.second + dx[i] >= 0 &&
-            cur_position.second + dx[i] < c &&
-            v[cur_position.first + dy[i]][cur_position.second + dx[i]] ==
+        if (v[cur_position.first + dy[i]][cur_position.second + dx[i]] ==
                 EMPTY &&
             !jihun_visited[cur_position.first + dy[i]]
                           [cur_position.second + dx[i]]) {
